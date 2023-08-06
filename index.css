@@ -49,11 +49,14 @@ section {
   height: 500px;
   width: 700px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   z-index: 1;
 
-  background-color: rgb(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 .title {
@@ -69,13 +72,23 @@ section {
 }
 
 .continent:hover {
-  transition: all 1s;
+  transition: all 0.5s;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .continent:hover > .title {
   transition: all 1s;
   opacity: 1;
+}
+
+.chartWrapper {
+  visibility: hidden;
+  height: 500px;
+  width: 700px;
+}
+
+.show {
+  visibility: visible;
 }
 
 .box {

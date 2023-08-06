@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Travel</title>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.3/chart.min.js"
-      integrity="sha512-fMPPLjF/Xr7Ga0679WgtqoSyfUoQgdt8IIxJymStR5zV3Fyb6B3u/8DcaZ6R6sXexk5Z64bCgo2TYyn760EdcQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -23,6 +20,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="./index.js"></script>
     <link rel="stylesheet" href="./index.css" />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header>
@@ -39,17 +43,35 @@
         </div>
 
         <div data-aos="fade-up">
-          <img src="./img/asia.jpeg" alt="" class="image asia" />
-          <div class="continent">
-            <div class="title titleAsia">ASIA</div>
+          <div class="swiper-container" style="width: 700px">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/asia.jpeg" alt="asia" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/china.webp" alt="asia" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/pilippines.webp" alt="asia" class="image" />
+              </div>
+            </div>
+          </div>
+          <div class="continent asia">
+            <div class="title">ASIA</div>
           </div>
         </div>
 
-        <div class="box"></div>
+        <br />
+        <br />
+        <br />
+
+        <div class="chartWrapper">
+          <canvas id="asiaChart"></canvas>
+        </div>
 
         <div data-aos="fade-up">
-          <img src="./img/europe.jpeg" alt="" class="image europe" />
-          <div class="continent">
+          <img src="./img/europe.jpeg" alt="" class="image" />
+          <div class="continent europe">
             <div class="title titleEurope">EUROPE</div>
           </div>
         </div>
@@ -57,24 +79,24 @@
         <div class="box"></div>
 
         <div data-aos="fade-up">
-          <img src="./img/america.jpeg" alt="" class="image america" />
-          <div class="continent">
+          <img src="./img/america.jpeg" alt="" class="image" />
+          <div class="continent america">
             <div class="title titleAmerica">AMERICA</div>
           </div>
         </div>
         <div class="box"></div>
 
         <div data-aos="fade-up">
-          <img src="./img/oceania.webp" alt="" class="image oceania" />
-          <div class="continent">
+          <img src="./img/oceania.webp" alt="" class="image" />
+          <div class="continent oceania">
             <div class="title titleOceania">OCEANIA</div>
           </div>
         </div>
         <div class="box"></div>
 
         <div data-aos="fade-up">
-          <img src="./img/africa.webp" alt="" class="image africa" />
-          <div class="continent">
+          <img src="./img/africa.webp" alt="" class="image" />
+          <div class="continent africa">
             <div class="title titleAfrica">AFRICA</div>
           </div>
         </div>
