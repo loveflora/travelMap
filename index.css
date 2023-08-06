@@ -95,6 +95,11 @@ section {
   height: 200px;
 }
 
+iframe {
+  margin: 100px;
+  visibility: hidden;
+}
+
 footer {
   height: 500px;
   background-color: rgb(0, 0, 0);
@@ -103,5 +108,28 @@ footer {
 @media (max-width: 768px) {
   #map {
     width: 500px;
+  }
+
+  #asiaChart {
+    margin: 40px;
+  }
+
+  .image {
+    width: 500px;
+    height: 300px;
+  }
+
+  .continent {
+    width: 500px;
+    height: 300px;
+    margin: 0 100px;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+
+  .swiper-container {
+    text-align: center;
   }
 }

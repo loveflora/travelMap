@@ -25,8 +25,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- video -->
+    <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet" />
+    <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
   </head>
   <body>
     <header>
@@ -70,36 +72,124 @@
         </div>
 
         <div data-aos="fade-up">
-          <img src="./img/europe.jpeg" alt="" class="image" />
+          <div class="swiper-container" style="width: 700px">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/europe.jpeg" alt="" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/europew.jpeg" alt="asia" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/europe2.jpeg" alt="asia" class="image" />
+              </div>
+            </div>
+          </div>
           <div class="continent europe">
             <div class="title titleEurope">EUROPE</div>
           </div>
         </div>
 
-        <div class="box"></div>
+        <iframe
+          id="europeIframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/RNx0akt3_XI?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
 
         <div data-aos="fade-up">
-          <img src="./img/america.jpeg" alt="" class="image" />
+          <div class="swiper-container" style="width: 700px">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/america.jpeg" alt="" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/america2.jpeg" alt="asia" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/america3.avif" alt="asia" class="image" />
+              </div>
+            </div>
+          </div>
           <div class="continent america">
             <div class="title titleAmerica">AMERICA</div>
           </div>
         </div>
-        <div class="box"></div>
+
+        <iframe
+          id="americaIframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/_smHuTBimYE?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
 
         <div data-aos="fade-up">
-          <img src="./img/oceania.webp" alt="" class="image" />
+          <div class="swiper-container" style="width: 700px">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/oceania.webp" alt="" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/oceania2.webp" alt="asia" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/oceania3.webp" alt="asia" class="image" />
+              </div>
+            </div>
+          </div>
           <div class="continent oceania">
             <div class="title titleOceania">OCEANIA</div>
           </div>
         </div>
-        <div class="box"></div>
+
+        <iframe
+          id="oceaniaIframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/qmE6XEKmqkM?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
 
         <div data-aos="fade-up">
-          <img src="./img/africa.webp" alt="" class="image" />
+          <div class="swiper-container" style="width: 700px">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/africa.webp" alt="" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/africa2.webp" alt="asia" class="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/africa3.jpeg" alt="asia" class="image" />
+              </div>
+            </div>
+          </div>
           <div class="continent africa">
             <div class="title titleAfrica">AFRICA</div>
           </div>
         </div>
+
+        <iframe
+          id="africaIframe"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/32AciEK2P5Y?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </section>
     </main>
     <footer></footer>
