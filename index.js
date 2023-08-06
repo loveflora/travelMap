@@ -53,7 +53,6 @@ const config = {
 
 new Chart(asiaCtx, config);
 
-//++ aisa 차트 생성 함수
 const chartWrapper = document.querySelector(".chartWrapper");
 const asia = document.querySelector(".asia");
 // const europe = document.querySelector(".europe");
@@ -69,6 +68,7 @@ function showChartHandler() {
 
 asia.addEventListener("click", showChartHandler);
 
+// # 오류 뭐지...?
 for (let i = 1; i <= continentList.length; i++) {
   document
     .querySelector(`.${continentList[i]}`)
@@ -79,10 +79,11 @@ for (let i = 1; i <= continentList.length; i++) {
     });
 }
 
-// europe.addEventListener("click", () => {
-//   document.getElementById("europeIframe").classList.toggle("show");
-// });
+const icon = document.querySelector(".icon");
+const msg = document.querySelector(".hiddenMsg");
 
-// continentList[2].addEventListener("click", () => {
-//   document.getElementById(`${continentList[2]}Iframe`).classList.toggle("show");
-// });
+icon.addEventListener("click", () => {
+  msg.classList.toggle("show");
+});
+
+// icon("click", showMsgHandler);

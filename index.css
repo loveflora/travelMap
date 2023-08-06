@@ -87,10 +87,6 @@ section {
   width: 700px;
 }
 
-.show {
-  visibility: visible;
-}
-
 .box {
   height: 200px;
 }
@@ -102,7 +98,31 @@ iframe {
 
 footer {
   height: 500px;
-  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  font-size: 40px;
+  transition: 1s all;
+}
+
+.hiddenMsg {
+  visibility: hidden;
+}
+
+#creater {
+  font-size: 10px;
+}
+
+.footerWrapper {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -132,4 +152,8 @@ footer {
   .swiper-container {
     text-align: center;
   }
+}
+
+.show {
+  visibility: visible;
 }
