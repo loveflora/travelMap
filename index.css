@@ -114,15 +114,24 @@ footer {
 }
 
 .hiddenMsg {
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 #creater {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footerWrapper {
   text-align: center;
+}
+
+a {
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  color: inherit; /* 링크의 색상 제거 */
+}
+
+.fa-github {
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {

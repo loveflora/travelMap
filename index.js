@@ -1,7 +1,7 @@
 AOS.init();
 
-const swiper = new Swiper(".swiper-container", {
-  effect: "fade",
+const swiper = new Swiper('.swiper-container', {
+  effect: 'fade',
   fadeEffect: {
     crossFade: true,
   },
@@ -14,76 +14,76 @@ const swiper = new Swiper(".swiper-container", {
 
 //] 차트
 
-const asiaCtx = document.getElementById("asiaChart");
+const asiaCtx = document.getElementById('asiaChart');
 
 const data = {
   labels: [
-    "Japan",
-    "China",
-    "Vietnam",
-    "Thailand",
-    "Taiwan",
-    "Philippines",
-    "Hong Kong",
+    'Japan',
+    'China',
+    'Vietnam',
+    'Thailand',
+    'Taiwan',
+    'Philippines',
+    'Hong Kong',
   ],
   datasets: [
     {
-      label: "2023년 국민 해외관광객 (Asia)",
+      label: '2023년 국민 해외관광객 (Asia)',
       data: [3128470, 4346567, 1602183, 538766, 673841, 112371, 265074],
       backgroundColor: [
-        "rgb(255, 99, 132)",
-        "rgb(255, 205, 86)",
-        "rgb(201, 203, 207)",
-        "rgb(114, 212, 125)",
-        "rgb(54, 116, 135)",
-        "rgb(54, 162, 25)",
-        "rgb(74, 162, 235)",
+        'rgb(255, 99, 132)',
+        'rgb(255, 205, 86)',
+        'rgb(201, 203, 207)',
+        'rgb(114, 212, 125)',
+        'rgb(54, 116, 135)',
+        'rgb(54, 162, 25)',
+        'rgb(74, 162, 235)',
       ],
     },
   ],
 };
 
 const config = {
-  type: "bar",
+  type: 'bar',
   data,
   options: {
-    indexAxis: "y",
+    indexAxis: 'y',
   },
 };
 
 new Chart(asiaCtx, config);
 
-const chartWrapper = document.querySelector(".chartWrapper");
-const asia = document.querySelector(".asia");
+const chartWrapper = document.querySelector('.chartWrapper');
+const asia = document.querySelector('.asia');
 // const europe = document.querySelector(".europe");
 // const america = document.querySelector(".america");
 // const oceania = document.querySelector(".oceania");
 // const africa = document.querySelector(".africa");
 
-const continentList = ["asia", "europe", "america", "oceania", "africa"];
+const continentList = ['asia', 'europe', 'america', 'oceania', 'africa'];
 
 function showChartHandler() {
-  chartWrapper.classList.toggle("show");
+  chartWrapper.classList.toggle('show');
 }
 
-asia.addEventListener("click", showChartHandler);
+asia.addEventListener('click', showChartHandler);
 
 // # 오류 뭐지...?
 for (let i = 1; i <= continentList.length; i++) {
   document
     .querySelector(`.${continentList[i]}`)
-    .addEventListener("click", () => {
+    .addEventListener('click', () => {
       document
         .getElementById(`${continentList[i]}Iframe`)
-        .classList.toggle("show");
+        .classList.toggle('show');
     });
 }
 
-const icon = document.querySelector(".icon");
-const msg = document.querySelector(".hiddenMsg");
+const icon = document.querySelector('.icon');
+const msg = document.querySelector('.hiddenMsg');
 
-icon.addEventListener("click", () => {
-  msg.classList.toggle("show");
+icon.addEventListener('click', () => {
+  msg.classList.toggle('show');
 });
 
-// icon("click", showMsgHandler);
+icon('click', showMsgHandler);
