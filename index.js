@@ -60,7 +60,7 @@ const asia = document.querySelector('.asia');
 // const oceania = document.querySelector(".oceania");
 // const africa = document.querySelector(".africa");
 
-const continentList = ['asia', 'europe', 'america', 'oceania', 'africa'];
+const continentList = ['europe', 'america', 'oceania', 'africa'];
 
 function showChartHandler() {
   chartWrapper.classList.toggle('show');
@@ -68,8 +68,8 @@ function showChartHandler() {
 
 asia.addEventListener('click', showChartHandler);
 
-// # 오류 뭐지...?
-for (let i = 1; i <= continentList.length; i++) {
+// # 배열 초기값은 웬만하면 0부터 시작 !
+for (let i = 0; i < continentList.length; i++) {
   document
     .querySelector(`.${continentList[i]}`)
     .addEventListener('click', () => {
@@ -85,5 +85,3 @@ const msg = document.querySelector('.hiddenMsg');
 icon.addEventListener('click', () => {
   msg.classList.toggle('show');
 });
-
-icon('click', showMsgHandler);
